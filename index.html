@@ -64,14 +64,14 @@ body {font-family: Arial;}
 <p>Here are the the first set of animals:</p>
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'BlueGill')">London</button>
-  <button class="tablinks" onclick="openCity(event, 'BillyGoat')">Paris</button>
-  <button class="tablinks" onclick="openCity(event, 'Tiger')">Tokyo</button>
-  <button class="tablinks" onclick="openCity(event, 'Lion')">Tokyo</button>
+  <button class="tablinks" onclick="animalName(event, 'BlueGill')">BlueGill</button>
+  <button class="tablinks" onclick="animalName(event, 'BillyGoat')">BillyGoat</button>
+  <button class="tablinks" onclick="animalName(event, 'Tiger')">Tiger</button>
+  <button class="tablinks" onclick="animalName(event, 'Lion')">Lion</button>
 </div>
 
 <div id="BlueGill" class="tabcontent">
-  <h3>London</h3>
+  <h3>BlueGill</h3>
   <p>Bluegills are fish that are not actually blue</p>
 </div>
 
@@ -86,7 +86,7 @@ body {font-family: Arial;}
 </div>
 
 <script>
-function openCity(evt, cityName) {
+function animalName(evt, animalName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
