@@ -72,18 +72,22 @@ body {font-family: Arial;}
 
 <div id="BlueGill" class="tabcontent">
   <h3>BlueGill</h3>
-  <p>Bluegills are fish that are not actually blue</p>
+  <p>Bluegills are fish that are not actually blue.</p>
 </div>
 
 <div id="Paris" class="tabcontent">
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p> 
+  <h3>BillyGoat</h3>
+  <p>Billy goats like to eat grass and are pretty friendly. They usually aren't named Billy though. While they may be friendly they can still bite.</p> 
 </div>
 
-<div id="Tokyo" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
+<div id="Tiger" class="tabcontent">
+  <h3>Tiger</h3>
+  <p>Tigers have stripes on them. They do not like to be petted. Most Tigers are not named Tony.</p>
 </div>
+<div id="Lion" class="tabcontent">
+  <h3>Lion</h3>
+  <p>Most Lions names are not Leo. They also do not like to be petted.</p>
+ </div>
 
 <script>
 function animalName(evt, animalName) {
@@ -96,7 +100,7 @@ function animalName(evt, animalName) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(animalName).style.display = "block";
   evt.currentTarget.className += " active";
 }
 </script>
